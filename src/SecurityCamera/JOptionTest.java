@@ -1,13 +1,11 @@
 package SecurityCamera;
 
 
-import javax.management.timer.Timer;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 public class JOptionTest {
 
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		JOptionPane test = new JOptionPane("MOTION HAS BEEN DETECTED",JOptionPane.WARNING_MESSAGE);
 		JDialog occ = test.createDialog("INTRUDER ALERT!!!");
