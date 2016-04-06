@@ -30,6 +30,12 @@ public class PyComms {
 				
 				if(prev.equalsIgnoreCase(fromclient));
 				else{
+					if(fromclient.equalsIgnoreCase("occupied")){
+						dlg.setVisible(true);
+					}
+					else{
+						dlg.setVisible(false);
+					}
 					System.out.println("Client responded with "+fromclient);
 				}
 				
