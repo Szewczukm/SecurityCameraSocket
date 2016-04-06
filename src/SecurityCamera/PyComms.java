@@ -35,9 +35,7 @@ public class PyComms {
 				
 				prev = fromclient;
 				
-			}	
-			
-			
+			}		
 		}
 		catch(Exception e){
 			System.out.println(e);
