@@ -5,12 +5,14 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Calendar;
 
+import javax.management.timer.Timer;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
 public class PyComms {
+
 	
 	
 	public static void main(String[] args) {
@@ -28,13 +30,6 @@ public class PyComms {
 			//Creation of Socket server on port 4444
 			ServerSocket server = new ServerSocket(4444);
 			System.out.println("Waiting for client on port 4444");
-			
-			//ADD THREAD FOR AUTO-CLOSE AFTER 20 SECONDS IF NOT CONNECTED
-//			new Thread(new Runnable(){
-//				public void run(){
-//					
-//			}
-//			}).start();
 			
 			//Creates a socket for the connected client once it is connected
 			Socket connected = server.accept();
